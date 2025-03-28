@@ -103,8 +103,15 @@ export const Services: React.FC = () => {
           </MagicCard>
         </div>
 
+        {/* Üstteki Yazı */}
+        <div className="w-full text-center z-10 mt-8"> {/* mb-8 ile alt boşluk eklendi */}
+          <p className="text-lg font-mono text-neon animate-pulse">
+            Her şeyi ortaya mı çıkartmamız gerekiyordu?
+          </p>
+        </div>
+
         {/* ScratchToReveal Ortada */}
-        <div className="flex justify-center items-center mt-16">
+        <div className="flex justify-center items-center mt-8">
           <ScratchToReveal
             width={250}
             height={250}
