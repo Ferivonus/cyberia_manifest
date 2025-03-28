@@ -8,7 +8,7 @@ export const Header: React.FC = () => {
       </span>
            <span className="mt-4 text-center text-xl text-white">
 
-        Yeni internet çağının yeni Web 4 projesi
+        Yeni internet çağının yeni Web 4 projesi sizlerle.
       </span>
  
       <RetroGrid />
