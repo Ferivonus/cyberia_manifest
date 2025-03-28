@@ -7,7 +7,7 @@ import HomePage from './../new_pages/Home';
 import About from './../new_pages/About';
 import Contact from './../new_pages/Contact';
 import Manifest from './../new_pages/Manifest';
-import Navbar from './../components/Navbar';
+import Navbar from './../components/Header';
 
 export default function App() {
   const [isClient, setIsClient] = useState(false);
@@ -27,9 +27,9 @@ export default function App() {
         
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/manifest" element={<Manifest />} />
+          <Route path="/hakkımızda" element={<About />} />
+          <Route path="/kullanan_yerler" element={<Contact />} />
+          <Route path="/manifestomuz" element={<Manifest />} />
         </Routes>
       </div>
     </Router>

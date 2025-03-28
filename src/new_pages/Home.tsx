@@ -1,8 +1,14 @@
+import { Services } from "../components/main_comp/we_provide";
+import { Code } from "../components/main_comp/how_we_do";
+import { Header } from "../components/main_comp/cyberia_header";
+
+
 const HomePage: React.FC = () => {
   return (
     <div>
-      <h1>Home Page</h1>
-      <p>Welcome to the Home page!</p>
+      <Header />
+      <Services />
+      <Code />
     </div>
   );
 };
