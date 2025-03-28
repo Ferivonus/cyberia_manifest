@@ -3,7 +3,7 @@ import { MagicCard } from "@/components/magicui/magic-card";
 
 export const Code: React.FC = () => {
   return (
-    <section id="services" className="py-16 md:py-24">
+    <section id="services" className="py-1 md:py-1">
       <div className="px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
