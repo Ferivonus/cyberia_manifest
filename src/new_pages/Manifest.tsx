@@ -1,23 +1,30 @@
 import { TextAnimate } from "../components/magicui/text-animate";
 
-const Manifest: React.FC = () => {
+const Manifest = () => {
+  const text = [
+    "Artık özgürlüğümüzü geri alma zamanı gelmedi mi?",
+    "Her hareketimizin izlendiği, her kelimemizin kaydedildiği bir dünyada…",
+    "Gerçekten özgür müyüz?",
+    "Eskiden, internette dolaşırken gözlerin üzerimizde olmadığını bilirdik.",
+    "Şimdi ise gizlilik bir lüks haline geldi.",
+    "Ben, geliştirdiğim teknolojiyi herkese açık bir şekilde paylaşıyorum.",
+    "Bilginin yalnızca belirli güçlerin elinde toplanmasını istemiyorum.",
+    "Ancak bunu kötüye kullanıldığını görmek için yapmıyorum.",
+    "Bunu birlikte değiştirebiliriz.",
+    "Çünkü güçlü olanların bizi izlemesine boyun eğmek zorunda değiliz.",
+    "Özgürlük, birlikte inşa ettiğimiz bir şeydir.",
+    "Seçim bizim."
+  ];
+
   return (
-    <div className="p-6">
-      {/* Büyük başlık */}
-      <h1 className="text-4xl font-bold text-neon mb-4">
-        Manifest Page
-      </h1>
-
-      
-
-      {/* Animasyonlu metin için daha büyük boyut */}
+    <div className="p-6 min-h-screen bg-black text-white flex items-center justify-center">
       <TextAnimate
         animation="blurInUp"
-        by="character"
+        by="line"
         duration={5}
-        className="text-2xl font-mono text-gray-200 leading-relaxed"
+        className="text-xl font-mono text-gray-300 leading-relaxed max-w-2xl text-center"
       >
-        Welcome to the Manifest Page! Watch this text animate character by character.
+        {text.join("\n")}
       </TextAnimate>
     </div>
   );
